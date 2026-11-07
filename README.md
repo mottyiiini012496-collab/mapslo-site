@@ -1,0 +1,2 @@
+# mapslo-site
+まぷスロ
