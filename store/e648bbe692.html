@@ -1,6 +1,11 @@
 <!doctype html><html lang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>パチンコ三福・東川口店｜まぷスロ</title>
 <meta name="description" content="まぷスロ｜パチスロ店の強い日と抽選方式がわかる地図">
+<link rel="icon" href="../assets/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/favicon-180.png">
+<meta property="og:title" content="パチンコ三福・東川口店｜まぷスロ"><meta property="og:description" content="パチスロ店の強い日と抽選方式がわかる地図">
+<meta property="og:image" content="https://mapslo.flexs.uk/assets/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0508">
 <style>
 :root{--bg:#f6f7fb;--card:#fff;--ink:#0f172a;--sub:#64748b;--line:#e2e8f0;--brand:#ff5a5f;--brand2:#ffb400;--ok:#16a34a}
 @media (prefers-color-scheme:dark){:root{--bg:#0b1120;--card:#111827;--ink:#e5e7eb;--sub:#94a3b8;--line:#1f2937}}
@@ -9,10 +14,17 @@ body{background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Noto San
 a{color:inherit}
 header{position:sticky;top:0;z-index:1000;background:var(--card);border-bottom:1px solid var(--line)}
 .hd{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
-.logo{font-weight:900;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:6px}
+.logo{font-weight:900;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0}
 .logo i{font-style:normal;color:var(--brand)}
-nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
-nav a{text-decoration:none;font-size:13px;padding:6px 10px;border-radius:999px;color:var(--sub)}
+.logo img{width:28px;height:28px;border-radius:6px}
+.hero{position:relative;overflow:hidden;border-radius:16px;margin-bottom:14px;min-height:150px;
+ background:radial-gradient(400px 200px at 80% 40%,#3a0a14,#0b0508 70%);color:#fff;padding:18px 16px}
+.hero img{position:absolute;right:-10px;top:-6px;height:175px;width:175px;object-fit:cover;
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%)}
+.hero .t{position:relative;font-weight:900;font-size:26px;text-shadow:0 0 14px rgba(255,40,70,.7)}
+.hero .t span{color:#ff2e4d}.hero .s{position:relative;margin-top:6px;font-size:13px;color:#ffd6dc;max-width:55%}
+nav{margin-left:auto;display:flex;gap:2px;flex-wrap:nowrap;overflow-x:auto;min-width:0}
+nav a{text-decoration:none;font-size:12.5px;padding:6px 8px;white-space:nowrap;border-radius:999px;color:var(--sub)}
 nav a.on{background:var(--ink);color:var(--card)}
 .wrap{max-width:1100px;margin:0 auto;padding:14px 16px 60px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
@@ -43,7 +55,7 @@ td.h{width:26px;height:24px;border-radius:4px}
 input[type=search]{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font-size:14px}
 footer{max-width:1100px;margin:0 auto;padding:16px;color:var(--sub);font-size:11.5px}
 </style></head><body>
-<header><div class="hd"><a class="logo" href="../index.html"><i>📍</i>まぷスロ</a><nav><a href="../index.html" class="">地図</a><a href="../calendar.html" class="">日付</a><a href="../about.html" class="">使い方</a></nav></div></header>
+<header><div class="hd"><a class="logo" href="../index.html"><img src="../assets/favicon-192.png" alt="">まぷスロ</a><nav><a href="../index.html" class="">地図</a><a href="../calendar.html" class="">日付</a><a href="../accuracy.html" class="">当たり外れ</a><a href="../about.html" class="">使い方</a></nav></div></header>
 <div class="wrap">
 <div class="sub"><a href="../index.html">← 地図</a></div>
 <h1>パチンコ三福・東川口店</h1>
@@ -56,5 +68,5 @@ footer{max-width:1100px;margin:0 auto;padding:16px;color:var(--sub);font-size:11
 <div style="margin-top:8px"><a href="https://www.p-world.co.jp/saitama/mifuku.htm" target="_blank" rel="noopener">店のページ（P-WORLD）↗</a></div></div>
 </div>
 <footer>まぷスロは、各店の過去の公開データから「強い日の傾向」を出しています。結果を約束するものではありません。遊技は18歳以上・ご自身の判断で、無理のない範囲で。<br>
-<a href="../terms.html">利用規約</a>・<a href="../privacy.html">プライバシーポリシー</a>・<a href="../tokushoho.html">特定商取引法に基づく表記</a>　運営: まぷスロ運営<br>地図: © OpenStreetMap contributors</footer>
+<a href="../terms.html">利用規約</a>・<a href="../privacy.html">プライバシーポリシー</a>・<a href="../tokushoho.html">特定商取引法に基づく表記</a>・<a href="https://x.com/mapslo_jp" target="_blank" rel="noopener">X（@mapslo_jp）</a>　運営: まぷスロ運営<br>地図: © OpenStreetMap contributors</footer>
 </body></html>
