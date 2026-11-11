@@ -1,0 +1,66 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>まぷスロ＋ 11/9(月)</title>
+<meta name="description" content="パチスロ店の「強い日」と抽選方式がわかる無料の地図。東京・神奈川・埼玉・千葉の約300店を、過去のデータから毎日更新。">
+<link rel="icon" href="assets/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta property="og:title" content="まぷスロ＋ 11/9(月)"><meta property="og:description" content="パチスロ店の「強い日」と抽選方式がわかる無料の地図。東京・神奈川・埼玉・千葉の約300店を、過去のデータから毎日更新。">
+<meta property="og:image" content="https://mapslo.flexs.uk/assets/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0508">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#0f172a;--sub:#64748b;--line:#e2e8f0;--brand:#ff5a5f;--brand2:#ffb400;--ok:#16a34a}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1120;--card:#111827;--ink:#e5e7eb;--sub:#94a3b8;--line:#1f2937}}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;font-size:14px;line-height:1.6}
+a{color:inherit}
+header{position:sticky;top:0;z-index:1000;background:var(--card);border-bottom:1px solid var(--line)}
+.hd{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.logo{font-weight:900;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0}
+.logo i{font-style:normal;color:var(--brand)}
+.logo img{width:28px;height:28px;border-radius:6px}
+.hero{position:relative;overflow:hidden;border-radius:16px;margin-bottom:14px;min-height:150px;
+ background:radial-gradient(400px 200px at 80% 40%,#3a0a14,#0b0508 70%);color:#fff;padding:18px 16px}
+.hero img{position:absolute;right:-10px;top:-6px;height:175px;width:175px;object-fit:cover;
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%)}
+.hero .t{position:relative;font-weight:900;font-size:26px;text-shadow:0 0 14px rgba(255,40,70,.7)}
+.hero .t span{color:#ff2e4d}.hero .s{position:relative;margin-top:6px;font-size:13px;color:#ffd6dc;max-width:55%}
+nav{margin-left:auto;display:flex;gap:2px;flex-wrap:nowrap;overflow-x:auto;min-width:0}
+nav a{text-decoration:none;font-size:12.5px;padding:6px 8px;white-space:nowrap;border-radius:999px;color:var(--sub)}
+nav a.on{background:var(--ink);color:var(--card)}
+.wrap{max-width:1100px;margin:0 auto;padding:14px 16px 60px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+h1{font-size:20px;margin:4px 0 8px}h2{font-size:16px;margin:0 0 8px}
+.sub{color:var(--sub);font-size:12.5px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--ink);color:var(--card);border-color:var(--ink)}
+#map{height:62vh;min-height:360px;border-radius:14px;border:1px solid var(--line)}
+.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--sub);margin-top:6px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+.lk{display:inline-block;flex-shrink:0;white-space:nowrap;align-self:flex-start;font-size:11.5px;font-weight:700;padding:1px 8px;border-radius:999px;color:#fff;margin-right:4px}
+.pop b{font-size:14px}.pop .st{font-weight:900;font-size:16px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:8px 14px;border-radius:10px;background:var(--ink);color:var(--card)}
+.btn.brand{background:var(--brand);color:#fff}
+.list .row{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.list .row:last-child{border-bottom:none}
+.rk{width:26px;text-align:center;font-weight:900;color:var(--sub)}
+.sv{margin-left:auto;font-weight:900;white-space:nowrap}
+.tbl{overflow-x:auto}table{border-collapse:collapse;font-size:12px}
+th,td{border-bottom:1px solid var(--line);padding:4px 3px;text-align:center;white-space:nowrap}
+th.n,td.n{text-align:left;position:sticky;left:0;background:var(--card);max-width:150px;overflow:hidden;text-overflow:ellipsis;padding-right:8px}
+td.h{width:26px;height:24px;border-radius:4px}
+.sat{color:#2563eb}.sun{color:#dc2626}
+.lock{border:2px dashed var(--brand2);border-radius:14px;padding:14px;text-align:center}
+.strip{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.strip div{border-radius:8px;padding:5px 0;text-align:center;font-size:10.5px;min-width:0;line-height:1.35}
+input[type=search]{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font-size:14px}
+footer{max-width:1100px;margin:0 auto;padding:16px;color:var(--sub);font-size:11.5px}
+</style><meta name="robots" content="noindex,nofollow,noarchive"></head><body>
+<header><div class="hd"><a class="logo" href="index.html"><img src="assets/favicon-192.png" alt="">まぷスロ</a><nav style="display:none"><a href="index.html" class="">地図</a><a href="calendar.html" class="">日付</a><a href="accuracy.html" class="">当たり外れ</a><a href="about.html" class="">使い方</a></nav></div></header>
+<div class="wrap">
+<h1>まぷスロ＋ 11/9(月)</h1>
+<div class="sub">この記事を買った方だけが見られるページです。URLの共有はご遠慮ください。</div>
+<div class="card"><h2>店を選ぶ</h2><div class="sub">右の数字は今日の強さ（ふだんより何枚強い傾向か）。</div><div class="list"><a class="row" href="store/dcbe7443c3.html"><span><b>アミューズ浅草店</b><br><span class="sub">東京都台東区・今日の癖 6件・該当台 8台</span></span><span class="sv" style="color:#dc2626">+248</span></a><a class="row" href="store/68dbf78749.html"><span><b>ジャラン浅草店</b><br><span class="sub">東京都台東区・今日の癖 7件・該当台 8台</span></span><span class="sv" style="color:#f97316">+199</span></a><a class="row" href="store/f3a25332e7.html"><span><b>エスパス1300新小岩北口駅前店</b><br><span class="sub">東京都葛飾区・今日の癖 5件・該当台 8台</span></span><span class="sv" style="color:#f97316">+120</span></a><a class="row" href="store/0b7627a40c.html"><span><b>YASUDA9</b><br><span class="sub">東京都豊島区・今日の癖 8件・該当台 8台</span></span><span class="sv" style="color:#f97316">+108</span></a><a class="row" href="store/baacc2d3e1.html"><span><b>マルハン池袋店</b><br><span class="sub">豊島区・今日の癖 9件・該当台 8台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/360a46beb8.html"><span><b>マルハン新宿東宝ビル店</b><br><span class="sub">新宿区・今日の癖 8件・該当台 8台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/61c112fa8e.html"><span><b>エスパス日拓新宿歌舞伎町店</b><br><span class="sub">東京都新宿区・今日の癖 6件・該当台 8台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/72d51649cd.html"><span><b>BIGディッパー東中野店</b><br><span class="sub">東京都中野区・今日の癖 9件・該当台 0台</span></span><span class="sv" style="color:#f97316">+128</span></a><a class="row" href="store/0011338b58.html"><span><b>キコーナ新宿三丁目店</b><br><span class="sub">東京都新宿区・今日の癖 3件・該当台 0台</span></span><span class="sv" style="color:#f97316">+112</span></a><a class="row" href="store/db917697e7.html"><span><b>キコーナ蒲田店</b><br><span class="sub">東京都大田区・今日の癖 0件・該当台 0台</span></span><span class="sv" style="color:#2563eb">+62</span></a><a class="row" href="store/4f2e2a800c.html"><span><b>キコーナ府中店</b><br><span class="sub">東京都府中市・今日の癖 4件・該当台 0台</span></span><span class="sv" style="color:#2563eb">+27</span></a><a class="row" href="store/1f834776e5.html"><span><b>アイランド秋葉原店</b><br><span class="sub">東京都千代田区・今日の癖 9件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/3c4d3d9d8b.html"><span><b>エスパス日拓西武新宿駅前店</b><br><span class="sub">東京都新宿区・今日の癖 8件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/583f8adeff.html"><span><b>エスパス日拓上野本館</b><br><span class="sub">東京都台東区・今日の癖 8件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/aee813c601.html"><span><b>エスパス日拓上野新館</b><br><span class="sub">東京都台東区・今日の癖 8件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/31024441e6.html"><span><b>ビッグアップル．秋葉原店</b><br><span class="sub">東京都千代田区・今日の癖 7件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/36efbd4cd4.html"><span><b>BIGディッパー新橋1号店</b><br><span class="sub">東京都港区・今日の癖 7件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/8a34d4085f.html"><span><b>BIGディッパー新橋2号店</b><br><span class="sub">東京都港区・今日の癖 7件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/b6c3f7d75e.html"><span><b>マルハンメガシティ2000 蒲田7</b><br><span class="sub">大田区・今日の癖 7件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/7fc50dba5d.html"><span><b>マルハンメガシティ2000 蒲田1</b><br><span class="sub">大田区・今日の癖 7件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/c879fbfc0c.html"><span><b>メッセ三鷹店</b><br><span class="sub">東京都三鷹市・今日の癖 6件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/47361c19cd.html"><span><b>秋葉原UNO</b><br><span class="sub">千代田区・今日の癖 6件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/6d49e25533.html"><span><b>エスパス日拓秋葉原駅前店</b><br><span class="sub">東京都千代田区・今日の癖 5件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/2bfd295548.html"><span><b>YASUDA7</b><br><span class="sub">東京都豊島区・今日の癖 4件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/36622c9d2d.html"><span><b>カレイド新宿店</b><br><span class="sub">東京都新宿区・今日の癖 4件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/9c876439e4.html"><span><b>マルハン池袋 SLOT BASE</b><br><span class="sub">豊島区・今日の癖 4件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/488739c1d8.html"><span><b>楽園池袋店</b><br><span class="sub">豊島区・今日の癖 4件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/f3cd7a35dc.html"><span><b>ゴードン祖師谷店</b><br><span class="sub">東京都世田谷区・今日の癖 0件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/75472ff141.html"><span><b>エスパス日拓渋谷駅前新館</b><br><span class="sub">東京都渋谷区・今日の癖 0件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/3140e7fe50.html"><span><b>ARROW池上店</b><br><span class="sub">東京都大田区・今日の癖 0件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/f5d59000d6.html"><span><b>飯田橋プレサス</b><br><span class="sub">千代田区・今日の癖 0件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/1a1ffcaf73.html"><span><b>楽園渋谷道玄坂店</b><br><span class="sub">渋谷区・今日の癖 0件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/ec1cc3fd2f.html"><span><b>楽園渋谷駅前店</b><br><span class="sub">渋谷区・今日の癖 0件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a><a class="row" href="store/19bb95b899.html"><span><b>やすだ西池袋6号店</b><br><span class="sub">豊島区・今日の癖 0件・該当台 0台</span></span><span class="sv" style="color:#94a3b8">—</span></a></div></div>
+<div class="card sub">台の癖・該当台は過去の公開データから出した傾向です。結果を約束するものではありません。遊技は18歳以上・ご自身の判断で。</div></div>
+<footer>まぷスロは、各店の過去の公開データから「強い日の傾向」を出しています。結果を約束するものではありません。遊技は18歳以上・ご自身の判断で、無理のない範囲で。<br>
+<a href="terms.html">利用規約</a>・<a href="privacy.html">プライバシーポリシー</a>・<a href="tokushoho.html">特定商取引法に基づく表記</a>・<a href="https://x.com/mapslo_jp" target="_blank" rel="noopener">X（@mapslo_jp）</a>・<a href="https://note.com/mapslo_jp" target="_blank" rel="noopener">note（まぷスロ＋）</a>　運営: まぷスロ運営<br>地図: © OpenStreetMap contributors</footer>
+</body></html>

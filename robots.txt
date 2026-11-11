@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://mapslo.flexs.uk/sitemap.xml
+Disallow: /p/
